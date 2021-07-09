@@ -4,16 +4,28 @@ import Sidebar from './components/Admin/Sidebar/Sidebar';
 
 import Topbar from './components/Admin/AdminTopbar/Topbar';
 import Home from './components/Admin/Home/Home';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import UserList from './components/Admin/userList/UserList';
+import User from './components/Admin/user/User';
 
 export default function AdminDashboard() {
   return (
-    <div>
+    <Router>
       <Topbar />
       <div className='container'>
         <Sidebar />
-        <Home />
-        {/* <div className='others'>other pages</div> */}
+        <Switch>
+          <Route exact path='/admin'>
+            <Home />
+          </Route>
+          <Route path='/admin/mitarbeiter'>
+            <UserList />
+          </Route>
+          <Route path='/:userId'>
+            <User />
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }

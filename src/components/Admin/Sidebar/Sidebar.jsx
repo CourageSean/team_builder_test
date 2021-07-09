@@ -9,6 +9,9 @@ import {
   MailOutline,
   DynamicFeed,
   ChatBubbleOutline,
+  PeopleOutline,
+  Report,
+  Description,
 } from '@material-ui/icons';
 
 export default function Sidebar() {
@@ -22,10 +25,10 @@ export default function Sidebar() {
               <LineStyle className='sidebarIcon' /> Home
             </li>
             <li className='sidebarListItem'>
-              <Timeline className='sidebarIcon' /> Analytics
+              <LibraryBooks className='sidebarIcon' /> Projekte
             </li>
             <li className='sidebarListItem'>
-              <LibraryBooks className='sidebarIcon' /> Projekte
+              <PeopleOutline className='sidebarIcon' /> Teams
             </li>
           </ul>
         </div>
@@ -51,15 +54,21 @@ export default function Sidebar() {
               <PersonOutline className='sidebarIcon' /> Mitarbeiter
             </li>
             <li className='sidebarListItem'>
-              <Timeline className='sidebarIcon' /> Analytics
-            </li>
-            <li className='sidebarListItem'>
-              <LibraryBooks className='sidebarIcon' /> Projekte
+              <Timeline className='sidebarIcon' /> Analysen
             </li>
             <li className='sidebarListItem'>
               <TrendingUp className='sidebarIcon' /> Home
             </li>
+            <li className='sidebarListItem'>
+              <Report className='sidebarIcon' /> Meldungen
+            </li>
           </ul>
+        </div>
+        <div className='sidebarMenu'>
+          <h3 className='sidebarTitle'> Weiteres</h3>
+          <li className='sidebarListItem'>
+            <Description className='sidebarIcon' /> Dokumente
+          </li>
         </div>
       </div>
     </div>
