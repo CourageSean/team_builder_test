@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './sidebar.css';
 import {
   LineStyle,
@@ -21,15 +22,21 @@ export default function Sidebar() {
         <div className='sidebarMenu'>
           <h3 className='sidebarTitle'> Dashboard</h3>
           <ul className='sidebarList'>
-            <li className='sidebarListItem active'>
-              <LineStyle className='sidebarIcon' /> Home
-            </li>
-            <li className='sidebarListItem'>
-              <LibraryBooks className='sidebarIcon' /> Projekte
-            </li>
-            <li className='sidebarListItem'>
-              <PeopleOutline className='sidebarIcon' /> Teams
-            </li>
+            <Link to='/admin' className='link'>
+              <li className='sidebarListItem active'>
+                <LineStyle className='sidebarIcon' /> Home
+              </li>
+            </Link>
+            <Link to='/admin/projekte' className='link'>
+              <li className='sidebarListItem'>
+                <LibraryBooks className='sidebarIcon' /> Projekte
+              </li>
+            </Link>
+            <Link to='/admin/teams' className='link'>
+              <li className='sidebarListItem'>
+                <PeopleOutline className='sidebarIcon' /> Teams
+              </li>
+            </Link>
           </ul>
         </div>
         <div className='sidebarMenu'>
@@ -50,9 +57,11 @@ export default function Sidebar() {
         <div className='sidebarMenu'>
           <h3 className='sidebarTitle'> Personal</h3>
           <ul className='sidebarList'>
-            <li className='sidebarListItem'>
-              <PersonOutline className='sidebarIcon' /> Mitarbeiter
-            </li>
+            <Link to='/admin/mitarbeiter' className='link'>
+              <li className='sidebarListItem'>
+                <PersonOutline className='sidebarIcon' /> Mitarbeiter
+              </li>
+            </Link>
             <li className='sidebarListItem'>
               <Timeline className='sidebarIcon' /> Analysen
             </li>

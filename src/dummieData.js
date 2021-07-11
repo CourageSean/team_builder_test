@@ -70,8 +70,9 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Vollzeit',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
   {
     id: 2,
@@ -79,8 +80,9 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Teilzeit',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
   {
     id: 3,
@@ -88,8 +90,9 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Remote',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
   {
     id: 4,
@@ -97,8 +100,9 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Vollzeit',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
   {
     id: 5,
@@ -106,8 +110,9 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Vollzeit',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
   {
     id: 6,
@@ -115,7 +120,8 @@ export const rows = [
     avatar:
       'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=540',
     email: 'jon@gmail.com',
-    status: 'active',
-    transaction: '120.00€',
+    status: 'Teilzeit',
+    position: 'Softwareentwickler',
+    erfahrung: '2 Jahre',
   },
 ];

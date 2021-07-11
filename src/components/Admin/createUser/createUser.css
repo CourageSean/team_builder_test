@@ -1,0 +1,57 @@
+.createUser {
+  flex: 4;
+}
+
+.createUserForm {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.createUserItem {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.createUserItem > label {
+  margin-bottom: 10px;
+  font-style: 14px;
+  font-weight: 600;
+  color: rgb(151, 148, 148);
+}
+
+.createUserItem > input {
+  height: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.createUserGender > input {
+  margin-top: 15px;
+}
+
+.createUserGender > label {
+  margin: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.createUserSelect {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.createUserButton {
+  width: 200px;
+  border: none;
+  background-color: darkblue;
+  color: #fff;
+  padding: 7px 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
