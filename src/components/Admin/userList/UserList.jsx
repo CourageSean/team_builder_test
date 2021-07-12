@@ -5,6 +5,10 @@ import { DeleteOutline, Visibility } from '@material-ui/icons';
 import { rows } from '../../../dummieData';
 import './userList.css';
 
+import { getPosts } from '../../../actions/posts';
+import { useSelector } from 'react-redux';
+//=======================
+
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
@@ -23,6 +27,13 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 
 export default function UserList() {
+  // const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(getPosts());
+  // }, [dispatch]);
+  const users = useSelector((state) => state.posts);
+  console.log(users);
   const [data, setData] = useState(rows);
 
   const handleDelete = (id) => {
