@@ -8,7 +8,7 @@ export default makeStyles((theme) => ({
     margin: '80px auto',
   },
   loginAvatar: {
-    backgroundColor: 'darkblue',
+    backgroundColor: '#000',
     marginBottom: '10px',
   },
   loginHeader: {},

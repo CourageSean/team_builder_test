@@ -1,5 +1,5 @@
 import AdminDashboard from './AdminDashboard';
-import Homepage from './components/homepage/Homepage';
+import UserDashboard from './components/pages/UserDashboard';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
@@ -21,8 +21,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
-          <Homepage />
+        <Route exact path='/dashboard'>
+          <UserDashboard />
         </Route>
         <Route exact path='/login'>
           <Login />
