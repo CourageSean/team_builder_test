@@ -4,6 +4,7 @@ import { Grid, Paper, Avatar, TextField, Button } from '@material-ui/core';
 import { LockOutlined } from '@material-ui/icons';
 import useStyles from './styles';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 export default function Login() {
   let history = useHistory();
@@ -36,6 +37,7 @@ export default function Login() {
         }
       );
       setUser(response.data);
+      Cookies.set('RefreshToken', response.data.refreshToken);
 
       if (response.data.isAdmin && response.data.user.role === 'admin')
         return history.push('/admin');
